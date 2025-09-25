@@ -52,7 +52,9 @@ public class DroneAssignment {
         displayAltitude += 20;
         System.out.println("\nAfter climbing 20m: " + displayAltitude);
         // Battery: Battery drains 15%
-        batteryRounded *= 0.85;
+        batteryRounded *= 85;
+        batteryRounded /= 100;
+        batteryRounded -= 1;
         System.out.println("After battery drain: " + batteryRounded);
         // Photos: Drone takes 3 photos
         photos += 3;
