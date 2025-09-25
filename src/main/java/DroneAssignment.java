@@ -43,29 +43,29 @@ public class DroneAssignment {
         // Print them to check your work (optional)
 
 
-
-        System.out.println("Battery rounded is:  " + batteryRounded );
         System.out.println("Displayed altitude is:  " + displayAltitude);
+        System.out.println("Battery rounded is:  " + batteryRounded );
+
         
         // TODO: Part 2 - Compound Assignment Operators
         // Altitude: Drone climbs 20 meters
-        altitude += 20;
-        System.out.println("Altitude after climbing 20 is:  " + altitude);
+        displayAltitude += 20;
+        System.out.println("\nAfter climbing 20m: " + displayAltitude);
         // Battery: Battery drains 15%
-        battery *= 0.85;
-        System.out.println("Battery after draining 15% is:  " + battery);
+        batteryRounded *= 0.85;
+        System.out.println("After battery drain: " + batteryRounded);
         // Photos: Drone takes 3 photos
         photos += 3;
-        System.out.println("Photos after drone takes 3 photos is:  " + photos);
+        System.out.println("After taking 3 photos: " + photos);
         // Altitude: Drone descends to half its current altitude
-        altitude *= 0.5;
-        System.out.println("Altitude after descending half its height is:  " + altitude);
+        displayAltitude *= 0.5;
+        System.out.println("After descending to half: " + displayAltitude);
         // use modulo to calculate storage slots used on photos to calculate storage slots used
         int slotsUsed = photos % 4;
         // Display "Photos: " + photos
-        System.out.println("Photos:  " + photos);
+        System.out.println("Photos: " + photos);
         // Display "Storage slots used: " + photos + " out of 4"
-        System.out.println("Storage slots used:  " + photos + "out of 4");
+        System.out.println("Storage slots used: " + photos + " out of 4");
 
     }
 }
